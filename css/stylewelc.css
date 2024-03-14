@@ -1,0 +1,71 @@
+html{
+	background: linear-gradient(
+		135deg,
+		rgb(130, 0, 170) 35%,
+		rgb(197, 63, 85) 40%,
+		rgb(84, 2, 122) 55%,
+		rgba(34, 174, 230, 0.911) 85%
+	  );
+	  background-size: cover;
+	  min-height: 100vh;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;	
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+a{
+	text-decoration: none;
+}
+.conte{
+	margin: 2vh auto;
+	width: 100vw;
+	height: 100vh;	
+}
+
+  h2{
+	  font-size: 200px;
+	  font-weight: 800;
+	  color: rgb(235, 206, 206);
+	  margin:1vh auto;
+  }
+  .flex1{
+	  display: flex;
+	  justify-content: space-evenly;
+	  flex-direction: row;
+	  align-items: center;
+
+  }
+ .flex2{
+	justify-content: space-around;
+}
+  div>img{
+	  max-width: 9vw;
+	animation: quest 3.5s linear infinite;
+
+  }
+
+  @keyframes quest {
+	0%{
+		transform: translateX(0px) rotate(0deg);
+	  }
+
+	  25%{
+		transform: translateX(0px) rotate(25deg);
+	  }
+
+	  50%{
+		transform: translateX(0px) rotate(0deg);
+	  }
+
+	  75%{
+		transform: translateX(0px) rotate(-25deg);
+	  }
+	  100%{
+		transform: translateX(0px) rotate(0deg);
+	  }
+  }

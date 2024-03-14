@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кто хочет стать миллионером?</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+		<button onclick="sound()" ></button>
+			<script>
+			function sound()
+			{
+				let audio= new Audio();
+				audio.src="audio/1.mp3";
+				audio.autoplay=true;
+				audio.loop=true;
+			}
+			</script>
+    <div class="felx flexCont">
+      <div class="container">
+        <img src="" alt="" class="imgG" />
+
+        <div class="question question_full"></div>
+        <div class="felx flexAnswer">
+          <div class="felx flexAn">
+            <div class="answer"></div>
+            <div class="answer"></div>
+		  </div>
+		  <div class="felx"id="timer" >60</div>
+          <div class="flexAn felx">
+            <div class="answer"></div>
+            <div class="answer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="felx flexButton">
+        <button class="next-button felx" style="margin-top:200px;">Следующий вопрос</button>
+		<div class="correctAnswer"></div>
+		
+      </div>
+    </div>
+
+    <img src="img/robot.png" alt="" class="robot" />
+    <!--  -->
+    <script src="questions.js"></script>
+    <script src="js/Q.js"></script>
+  </body>
+</html>

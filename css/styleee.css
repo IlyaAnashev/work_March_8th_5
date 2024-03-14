@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body> button{
+	  padding: 0;
+  border: 0;
+  height: 80px;
+  width: 203px;
+  cursor: all-scroll;
+  position: absolute;
+  top: 50vh;
+  left: 1vw;
+  z-index: 2;
+  background-color: transparent;
+}
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+background: #000;
+  overflow: hidden;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 37.5vw;
+  width: 25vw;
+
+
+  text-align: center;
+  /* text-transform: uppercase; */
+  color: #fff;
+  animation: 200s credits linear infinite;
+}
+
+.movie {
+  margin-bottom: 50px;
+  font-size: 95px;
+  text-transform: uppercase
+}
+
+
+
+.job {
+  margin-bottom: 50px;
+  font-size: 75px;
+}
+
+.name {
+  margin-bottom: 50px;
+  font-size:85px;
+}
+
+@keyframes credits {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -500%;
+  }
+}
